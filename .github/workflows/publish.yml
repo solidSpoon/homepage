@@ -34,6 +34,12 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npm run build
 
+      - name: Current directory 📁
+        run: pwd
+
+      - name: List files 📂
+        run: ls -al
+
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
