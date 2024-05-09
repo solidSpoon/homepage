@@ -1,20 +1,14 @@
-import rehypePrism from '@mapbox/rehype-prism'
-import nextMDX from '@next/mdx'
-import remarkGfm from 'remark-gfm'
+// @ts-check
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
+  /* config options here */
   output: 'export',
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+  }
 }
 
-const withMDX = nextMDX({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypePrism],
-  },
-})
-
-export default withMDX(nextConfig)
+export default nextConfig
