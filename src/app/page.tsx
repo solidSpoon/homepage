@@ -97,9 +97,6 @@ export default async function Home() {
             <Photos/>
             <Projects/>
             <Articles/>
-            <Card className={'bg-yellow-50'}>
-                hah
-            </Card>
         </>
     )
 }
