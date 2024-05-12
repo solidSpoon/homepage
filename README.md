@@ -1,3 +1,3 @@
-# 👋 Hi, I'm Cyandev.
+# 👋 Hi, I'm solidSpoon.
 
 This is my personal website. 
