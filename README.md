@@ -1,1 +1,3 @@
-Built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+# 👋 Hi, I'm Cyandev.
+
+This is my personal website. 
