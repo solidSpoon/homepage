@@ -21,8 +21,8 @@ export default async function Articles() {
 
     return (
         <SimpleLayout
-            title="Writing on software design, company building, and the aerospace industry."
-            intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+            title="Writing on programming, product design, and more"
+            intro="All of my thoughts on programming, product design, and more. Links to my blog and notes. Both of which are build by Jetbrain's Writerside."
         >
             <div className="flex max-w-3xl flex-col space-y-16">
                 {links.map((project) => (
@@ -30,7 +30,7 @@ export default async function Articles() {
                         <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                             <Card.Link href={project.link.href}>{project.name}</Card.Link>
                         </h2>
-                        <Card.Description>{project.description}</Card.Description>
+                        {/*<Card.Description>{project.description}</Card.Description>*/}
                         <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                             <LinkIcon className="h-6 w-6 flex-none"/>
                             <span className="ml-2">{project.link.label}</span>
