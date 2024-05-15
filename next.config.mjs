@@ -27,6 +27,20 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  /**
+   * Configure redirects
+   *
+   * @see https://nextjs.org/docs/pages/api-reference/next-config-js/redirects
+   */
+  async redirects() {
+    return [
+      {
+        source: '/app/dash-player',
+        destination: 'https://dash-player.solidspoon.xyz',
+        permanent: true, // 表示这是一个永久重定向，浏览器会缓存这个响应
+      },
+    ];
+  },
 }
 
 export default nextConfig
